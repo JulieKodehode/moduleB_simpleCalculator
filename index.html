@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>A Simple Calculator</title>
+    <link href="index.css" rel="stylesheet" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div id="simpleCalculator">
+      <h1>A simple Calculator</h1>
+      <!-- Making a input for number -->
+      <input type="number" id="inputOne" placeholder="Write your first number" />
+      <!-- Making a select for operators-->
+      <select name="operator" id="operator">
+        <option value="addition">+</option>
+        <option value="subtraction">-</option>
+        <option value="multiplication">*</option>
+        <option value="division">/</option>
+      </select>
+      <!-- Making a input for number -->
+      <input type="number" id="inputTwo" placeholder="Write your second number" />
+      <!-- Making a button to call the function -->
+      <button onclick="calculate()">Result</button>
+      <!-- Making a empty p for the result -->
+      <h3>The result:</h3>
+      <p id="resultText"></p>
+    </div>
+  </body>
+</html>
